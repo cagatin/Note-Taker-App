@@ -33,7 +33,7 @@ N/A <br/>
 
 ## Questions? 
 Reach me at the following with your questions: <br/>
-Github Username: github.com/cagatin <br/>
+Github Username: https://github.com/cagatin <br/>
 Email:  cagatingilbert@gmail.com <br/>
 <br/>
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
