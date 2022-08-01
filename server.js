@@ -3,3 +3,10 @@ const express = require('express');
 const app = express();
 
 const PORT = process.env.PORT || 3000;
+
+// Middlewear
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// serve the static files
+app.use(express.static('public'));
