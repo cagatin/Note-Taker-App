@@ -1,11 +1,10 @@
 const express = require('express');                     // import express module
 const path = require('path');                           // import path module
 
-const notesRouter = require('./routes/notesRoute');     // import notesRouter
-const db = require('./db/db.json');                     // import the db JSON file (array)
+const notesRouter = require('./routes/notesRoute');     // import notesRouter               // import the db JSON file (array)
 
-
-const app = express();  //create express application
+//create express application
+const app = express();
 
 // Heroku --> https://evening-eyrie-72911.herokuapp.com/ 
 const PORT = process.env.PORT || 3000;
