@@ -12,7 +12,15 @@
 A note taker app used to write and save notes for the user. The app utilizes Express.js to retrieve note data from a JSON file. <br />
 
 ## Installation
-To install this app, the user must run $ npm install in the command line within the root directory to install the dependencies. To run a local version of the app, the user can run the node server.js command to create a local version. To view the deployed version, the user can go to https://cagatin-note-app.herokuapp.com/. <br/>
+To install this app, the user must run:
+ ```$ npm install``` 
+ in the command line within the root directory to install the dependencies. <br/> 
+ 
+ To run a local version of the app, the user can run: 
+ ```node server.js``` 
+ 
+ To view the deployed version: <br/> 
+ the user can go to https://cagatin-note-app.herokuapp.com/. <br/>
 
 ## Usage
 To quickly and efficiently write down notes for the user. <br/>
