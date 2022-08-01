@@ -37,6 +37,9 @@ router.post('/notes', (req, res) => {
 
 // DELETE route path for deleting a note
 router.delete('/notes/:id', (req, res) => {
+    if (db.length == 0) {
+        res.end();
+    }
     let deleteId = req.params.id;
 
     let newDb = db.filter(x => x.id != deleteId);
