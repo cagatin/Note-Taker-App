@@ -42,9 +42,13 @@ router.delete('/notes/:id', (req, res) => {
     }
     let deleteId = req.params.id;
 
-    let newDb = db.filter(x => x.id != deleteId);
+    for (let i = 0; i < db.length; i++) {
+        if (db[i].id == deleteId) {
+            db.splice(i, 1);
+        }
+    }
 
-    fs.writeFile('./db/db.json', JSON.stringify(newDb), (err) => {
+    fs.writeFile('./db/db.json', JSON.stringify(db), (err) => {
         err ? console.log(err) : console.log('Note deleted!');
     })
     res.end();
