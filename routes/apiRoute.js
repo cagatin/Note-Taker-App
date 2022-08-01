@@ -44,7 +44,7 @@ router.delete('/notes/:id', (req, res) => {
     fs.writeFile('./db/db.json', JSON.stringify(newDb), (err) => {
         err ? console.log(err) : console.log('Note deleted!');
     })
-    res.send(db);
+    res.end();
 })
 
 
