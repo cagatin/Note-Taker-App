@@ -1,14 +1,13 @@
 const router = require('express').Router();
 const fs = require('fs');
+const { title } = require('process');
 const uniqid = require('uniqid');
 const db = require('../db/db.json');     //import the db json file
 
 // route for saving notes
 router.post('/notes', (req, res) => {
     // retrieve the title and text from req.body
-    if (req.body) {
-        let { title, text } = req.body;
-    }
+    const { title, text } = req.body;
 
     // if a title and text exist, create a new note.
     if (title && text) {
@@ -21,9 +20,12 @@ router.post('/notes', (req, res) => {
         db.push(newNote);
 
         // update the json file
-        fs.writeFile('../db/db.json', JSON.stringify(db), (err) => {
+        fs.writeFile('./db/db.json', JSON.stringify(db), (err) => {
             err ? console.log(err) : console.log('Note saved!');
         })
+        res.send(db);
+    } else {
+        res.send("Error!");
     }
 })
 
