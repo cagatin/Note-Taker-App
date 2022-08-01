@@ -1,6 +1,6 @@
 // Heroku --> https://evening-eyrie-72911.herokuapp.com/ 
 const express = require('express');
-const path = requie('path');
+const path = require('path');
 const app = express();
 
 const PORT = process.env.PORT || 3000;
@@ -11,3 +11,9 @@ app.use(express.urlencoded({ extended: true }));
 
 // serve the static files
 app.use(express.static('public'));
+
+
+// Start the server
+app.listen(PORT, () => {
+    console.log(`Listening on PORT ${PORT}`);
+})
