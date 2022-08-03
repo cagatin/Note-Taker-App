@@ -2,15 +2,18 @@ const router = require('express').Router();
 const fs = require('fs');
 const { title } = require('process');
 const uniqid = require('uniqid');
-const db = require('../db/db.json');     //import the db json file
 
 // GET route path for displaying the notes
 router.get('/notes', (req, res) => {
+    const db = require('../db/db.json');     //import the db json file
+
     res.send(db);
 })
 
 // POST route path for saving notes
 router.post('/notes', (req, res) => {
+    const db = require('../db/db.json');     //import the db json file
+
     // retrieve the title and text from req.body
     const { title, text } = req.body;
 
@@ -37,6 +40,8 @@ router.post('/notes', (req, res) => {
 
 // DELETE route path for deleting a note
 router.delete('/notes/:id', (req, res) => {
+    const db = require('../db/db.json');     //import the db json file
+
     if (db.length == 0) {
         res.end();
     }
