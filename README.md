@@ -1,4 +1,6 @@
 # Note Taker App
+![](./public/assets/images/full_app.PNG) <br/>
+Welcome to my [Note Taking App](https://cagatin-note-app.herokuapp.com/) <br/>
 
 ## Table of Contents
 [Description](#description) <br />
@@ -23,7 +25,19 @@ To install this app, the user must run:
  the user can go to https://cagatin-note-app.herokuapp.com/. <br/>
 
 ## Usage
-To quickly and efficiently write down notes for the user. <br/>
+To create a new note the user can either: <br/>
+![](public/assets/images/add_note.png) <br/>
+(a) Click on the + sign <br/>
+(b) Begin writing in the 'Note Title' and 'Note Text' areas <br/>
+
+To save a new note, the user can simply click the save icon as shown below: <br/>
+![](public/assets/images/save_note.png)<br/>
+
+The Notes are then displayed on the left hand side of the screen as shown: <br/>
+![](public/assets/images/displayed_notes.png)<br/>
+
+To delete notes, the user can click on the red trash icon as displayed below: <br/>
+![](public/assets/images/delete.png) <br/>
 
 ## Contribute
 To contribute to this project, fork the repository and submit a pull request with your desired changes.  <br/>
